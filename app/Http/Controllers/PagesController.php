@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class PagesController extends Controller
 {
-    //
+    /**
+     * Index
+     *
+     * @return void
+     */
     public function index(){
 
         $title = "Welcome to laravel";
