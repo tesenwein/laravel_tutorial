@@ -1,9 +1,9 @@
 @if(count($errors) > 0)
-    @foreach($errors->all() as $error)
-        <div class="alert alert-danger">
-            {{$error}}
-        </div>
-    @endforeach
+    <div class="alert alert-danger">        
+        @foreach($errors->all() as $error)
+                <ul>{{$error}}</ul>
+        @endforeach
+    </div>
 @endif
 
 @if(session('success'))
